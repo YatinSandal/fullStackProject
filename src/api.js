@@ -1,5 +1,5 @@
 const API_BASE_URL = "https://api.videosdk.live";
-const VIDEOSDK_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlrZXkiOiI5YWZmODE4ZS1iOTJlLTRhNTItODhlMy02ZWRlZjQxMTI3OTYiLCJwZXJtaXNzaW9ucyI6WyJhbGxvd19qb2luIl0sImlhdCI6MTczNTAyMjE5MiwiZXhwIjoxNzY2NTU4MTkyfQ.eYJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlrZXkiOiI5YWZmODE4ZS1iOTJlLTRhNTItODhlMy02ZWRlZjQxMTI3OTYiLCJwZXJtaXNzaW9ucyI6WyJhbGxvd19qb2luIl0sImlhdCI6MTczNTAyMjE5MiwiZXhwIjoxNzY2NTU4MTkyfQ.eYJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlrZXkiOiI5YWZmODE4ZS1iOTJlLTRhNTItODhlMy02ZWRlZjQxMTI3OTYiLCJwZXJtaXNzaW9ucyI6WyJhbGxvd19qb2luIl0sImlhdCI6MTczNTAyMjE5MiwiZXhwIjoxNzY2NTU4MTkyfQ";
+const VIDEOSDK_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlrZXkiOiI5YWZmODE4ZS1iOTJlLTRhNTItODhlMy02ZWRlZjQxMTI3OTYiLCJwZXJtaXNzaW9ucyI6WyJhbGxvd19qb2luIl0sImlhdCI6MTczNTAyMjQzOCwiZXhwIjoxNzY2NTU4NDM4fQ.XJtaXNzaW9ucyI2WyJhbGxvd19qb2luIl0sImlhdCI6MTczNTAyMjQzOCwiZXhwIjoxNzY2NTU4NDM4fQ5MiwiZXhwIjoxNzY2NTU4NDM4fQ5MiwiZXhwIjoxNzY2NTU4NDM4fQ5MiI6IkpXVCJ9.g5MiwiZXhwIjoxNzY2NTU4NDM4fQ5MiwiZXhwIjoxNzY2NTU4NDM4fQ5MiwizQaH0QUieIjfg9pe_pzFqEY";
 const API_AUTH_URL = process.env.REACT_APP_AUTH_URL;
 
 export const getToken = async () => {
@@ -35,7 +35,6 @@ export const createMeeting = async ({ token }) => {
   } else {
     return { meetingId: null, err: data.error }
   }
-
 };
 
 export const validateMeeting = async ({ roomId, token }) => {
@@ -60,5 +59,4 @@ export const validateMeeting = async ({ roomId, token }) => {
   } else {
     return { meetingId: null, err: data.error }
   }
-
 };
